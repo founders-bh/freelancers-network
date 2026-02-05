@@ -8,7 +8,7 @@
       "binding": "DB",
       "database_name": "FREELANCERS_NETWORK_DATABASE",
       "database_id": "freelancers-network-database",
-      "migrations_dir": "database/migrations"
+      "migrations_dir": "src/db/migrations"
     }
   ]
 }
