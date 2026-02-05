@@ -1,0 +1,14 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "freelancers-network",
+  "compatibility_date": "2025-09-06",
+  "main": "virtual:photon:cloudflare:server-entry",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "FREELANCERS_NETWORK_DATABASE",
+      "database_id": "freelancers-network-database",
+      "migrations_dir": "database/migrations"
+    }
+  ]
+}
