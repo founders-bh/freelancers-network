@@ -1,20 +1,100 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-@layer base {
-  h1 {
-    @apply mb-4 text-4xl font-bold tracking-tight text-gray-900;
+@plugin "daisyui/theme" {
+  name: "freelancers-light";
+  default: true;
+  color-scheme: light;
+
+  /* Base colors */
+  --color-base-100: oklch(100% 0 0); /* Pure white background */
+  --color-base-200: oklch(98% 0.005 240); /* Very light gray */
+  --color-base-300: oklch(95% 0.01 240); /* Light gray */
+  --color-base-content: oklch(25% 0.015 240); /* Dark text */
+
+  /* Brand colors */
+  --color-primary: oklch(52% 0.19 180); /* Deep teal */
+  --color-primary-content: oklch(100% 0 0); /* White text on primary */
+  --color-secondary: oklch(68% 0.2 35); /* Warm coral */
+  --color-secondary-content: oklch(100% 0 0);
+  --color-accent: oklch(58% 0.24 295); /* Purple */
+  --color-accent-content: oklch(100% 0 0);
+
+  /* Neutral */
+  --color-neutral: oklch(45% 0.015 240);
+  --color-neutral-content: oklch(100% 0 0);
+
+  /* Status colors */
+  --color-success: oklch(62% 0.2 150);
+  --color-info: oklch(65% 0.22 220);
+  --color-warning: oklch(75% 0.22 70);
+  --color-error: oklch(60% 0.25 25);
+
+  /* Border radius - modern, slightly rounded */
+  --radius-selector: 0.75rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+
+  /* Border */
+  --border: 2px;
+
+  /* Effects */
+  --depth: 2; /* Subtle shadows */
+  --noise: 0;
+}
+
+@plugin "daisyui/theme" {
+  name: "freelancers-dark";
+  prefersdark: true;
+  color-scheme: dark;
+
+  --color-base-100: oklch(20% 0.015 240); /* Dark background */
+  --color-base-200: oklch(17% 0.015 240);
+  --color-base-300: oklch(14% 0.015 240);
+  --color-base-content: oklch(90% 0.01 240); /* Light text */
+
+  /* Same brand colors work well in dark mode */
+  --color-primary: oklch(60% 0.22 180);
+  --color-secondary: oklch(70% 0.22 35);
+  --color-accent: oklch(65% 0.26 295);
+
+  /* Adjusted for dark backgrounds */
+  --color-neutral: oklch(35% 0.015 240);
+}
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --animate-fade-in: fadeIn 0.5s ease-in;
+  --animate-slide-up: slideUp 0.6s ease-out;
+  --animate-float: float 3s ease-in-out infinite;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
-  ul {
-    @apply list-disc pl-6;
+  @keyframes slideUp {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
-  ol {
-    @apply list-decimal pl-6;
-  }
-  p {
-    @apply mb-2 mt-2;
-  }
-  a {
-    @apply text-blue-600 hover:text-pink-400 visited:text-blue-900;
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
   }
 }

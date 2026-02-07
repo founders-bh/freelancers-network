@@ -23,6 +23,11 @@ type Variables = {
 
 const app = new Hono<{ Bindings: Bindings; Variables: Variables }>();
 
+// Health Check
+app.get("/api/health", (c) => {
+  return c.json({ status: "healthy", timestamp: Date.now() });
+});
+
 // 1. Database Middleware
 app.use("*", async (c, next) => {
   const db = drizzle(c.env.DB);
