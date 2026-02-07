@@ -72,10 +72,19 @@ npm install
 
 
 3. **Setup Environment:**
-Copy `.env.example` to `.env` and fill in your AuthJS secrets and Tap Payments credentials.
+Copy `.env.example` to `wrangler.toml` and fill in your AuthJS secrets and Tap Payments credentials.
+
+```bash
+cp .env.example wrangler.toml
+```
+
+
 4. **Database Migration:**
 ```bash
-npx wrangler d1 migrations apply freelancers-db --local
+npm run drizzle:generate
+npm run drizzle:migrate
+npx wrangler types
+npx wrangler d1 migrations apply DB --local
 
 ```
 

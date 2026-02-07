@@ -2,21 +2,12 @@
 
 <template>
   <div class="layout">
-    <Sidebar>
-      <Logo />
-      <Link href="/"> Welcome </Link>
-      <Link href="/todo"> Todo </Link>
-      <Link href="/star-wars"> Data Fetching </Link>
-    </Sidebar>
     <Content><slot /></Content>
   </div>
 </template>
 
 <script lang="ts" setup>
 import Content from "../components/Content.vue";
-import Link from "../components/Link.vue";
-import Logo from "../components/Logo.vue";
-import Sidebar from "../components/Sidebar.vue";
 </script>
 
 <style>

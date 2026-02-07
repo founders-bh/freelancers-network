@@ -15,6 +15,6 @@ export default {
 
   // https://vike.dev/vike-photon
   photon: {
-    server: "../server/entry.ts",
+    server: "../src/server/entry.ts",
   },
 } as Config;

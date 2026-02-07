@@ -24,7 +24,7 @@
             <span class="text-primary">We take 0%.</span>
           </h1>
           <p class="py-6 text-xl text-base-content/80">
-            A non-profit, open-source network fueled by <span class="badge badge-secondary badge-outline">Corporate Sponsorships</span>. 
+            A self-sustainable, not-for-profit, open-source network for freelancers, fueled by corporate sponsorships.
             We connect technical talent with sales experts to deliver projects efficiently.
             <br />
             <span class="font-bold block mt-2">100% of the project fee goes to YOU.</span>
@@ -42,16 +42,40 @@
       <div class="stats shadow stats-vertical lg:stats-horizontal bg-base-100">
         <div class="stat">
           <div class="stat-figure text-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="inline-block w-8 h-8 stroke-current"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
           </div>
           <div class="stat-title">Network Commission</div>
           <div class="stat-value text-primary">0%</div>
           <div class="stat-desc">Sustainably funded</div>
         </div>
-        
+
         <div class="stat">
           <div class="stat-figure text-secondary">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="inline-block w-8 h-8 stroke-current"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+              ></path>
+            </svg>
           </div>
           <div class="stat-title">Manual Escrow</div>
           <div class="stat-value text-secondary">Secure</div>
@@ -60,44 +84,14 @@
       </div>
     </div>
 
-    <!-- Sponsors Component -->
-    <div class="py-16 bg-base-100">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-10">Backed by Industry Leaders</h2>
-        <div class="flex flex-wrap justify-center items-center gap-8 opacity-70 grayscale hover:grayscale-0 transition-all duration-300">
-          <!-- Placeholder Sponsor Logos (Using text for now or generic placeholders) -->
-          <div class="w-40 h-20 bg-base-200 flex items-center justify-center rounded-box font-bold text-xl">
-            TechGiant
-          </div>
-          <div class="w-40 h-20 bg-base-200 flex items-center justify-center rounded-box font-bold text-xl">
-            CloudCorp
-          </div>
-          <div class="w-40 h-20 bg-base-200 flex items-center justify-center rounded-box font-bold text-xl">
-            InnovateGCC
-          </div>
-          <div class="w-40 h-20 bg-base-200 flex items-center justify-center rounded-box font-bold text-xl">
-            FutureBank
-          </div>
-        </div>
-        <p class="text-center mt-8 text-base-content/60">
-          Proudly sponsored by forward-thinking companies in the GCC.
-        </p>
-      </div>
-    </div>
-
     <!-- Footer -->
     <footer class="footer p-10 bg-neutral text-neutral-content">
       <nav>
-        <header class="footer-title">Network</header> 
-        <a class="link link-hover">About us</a>
-        <a class="link link-hover">Governance</a>
-        <a class="link link-hover">Transparency Report</a>
-      </nav> 
-      <nav>
-        <header class="footer-title">Legal</header> 
+        <header class="footer-title">Freelancers Network</header>
+        <a class="link link-hover">Learn about us</a>
+        <a class="link link-hover">ESG principles</a>
         <a class="link link-hover">Terms of use</a>
         <a class="link link-hover">Privacy policy</a>
-        <a class="link link-hover">Cookie policy</a>
       </nav>
     </footer>
   </div>

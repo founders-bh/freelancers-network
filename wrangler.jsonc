@@ -1,14 +1,21 @@
 {
-  "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "freelancers-network",
-  "compatibility_date": "2025-09-06",
-  "main": "virtual:photon:cloudflare:server-entry",
-  "d1_databases": [
-    {
-      "binding": "DB",
-      "database_name": "FREELANCERS_NETWORK_DATABASE",
-      "database_id": "freelancers-network-database",
-      "migrations_dir": "src/db/migrations"
-    }
-  ]
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "freelancers-network",
+	"compatibility_date": "2025-09-06",
+	"main": "virtual:photon:cloudflare:server-entry",
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "freelancers-network-database",
+			"database_id": "7eb78ae3-3fbb-47f1-8ac5-a825ab18cb22",
+			"migrations_dir": "src/db/migrations",
+			"remote": true
+		}
+	],
+	"routes": [
+		{
+			"pattern": "freelancers.network",
+			"custom_domain": true
+		}
+	]
 }

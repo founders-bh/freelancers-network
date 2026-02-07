@@ -18,7 +18,7 @@
     "build": "vike build",
     "preview": "vike build && vike preview",
     "drizzle:generate": "drizzle-kit generate",
-    "drizzle:migrate": "wrangler d1 migrations apply FREELANCERS_NETWORK_DATABASE --local",
+    "drizzle:migrate": "wrangler d1 migrations apply DB --local",
     "drizzle:studio": "drizzle-kit studio",
     "lint": "eslint .",
     "deploy": "vike build && wrangler deploy",
@@ -42,7 +42,7 @@
   "devDependencies": {
     "@eslint/js": "^9.39.2",
     "@tailwindcss/vite": "^4.1.18",
-    "@types/node": "^20.19.30",
+    "@types/node": "^20.19.32",
     "@vitejs/plugin-vue": "^6.0.3",
     "daisyui": "^5.5.16",
     "eslint": "^9.39.2",
